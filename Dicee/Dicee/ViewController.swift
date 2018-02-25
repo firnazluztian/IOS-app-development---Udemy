@@ -16,12 +16,15 @@ class ViewController: UIViewController {
     // initialize dice in an array
     let diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
+    // initialize imageview
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        updateDiceImage()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,17 +34,25 @@ class ViewController: UIViewController {
 
     // only executed when action is happening
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        
+        // call update dice image to randomize image when button is clicked
+        updateDiceImage()
+    }
+    
+    func updateDiceImage() {
+        
         // pick random number and display it to main UI
         randomDiceIndex1 = Int(arc4random_uniform(6))
         randomDiceIndex2 = Int(arc4random_uniform(6))
-        
-        print("first dice result is: ", randomDiceIndex1)
-        print("second dice result is: ", randomDiceIndex2)
         
         // replace dice image view with an image of randomize number
         diceImageView1.image = UIImage(named: diceArray[randomDiceIndex1])
         diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
     }
     
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        
+        updateDiceImage()
+    }
 }
 
