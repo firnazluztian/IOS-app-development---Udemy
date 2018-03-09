@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,66 +16,16 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-pv-dK4">
-                                <rect key="frame" x="67" y="79" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lna-bD-SVx">
-                                <rect key="frame" x="67" y="283" width="240" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zX3-fs-rbh">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Ce-f3-UNW">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8cX-g1-Oz3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Yv-60-9q1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                                                <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u5Q-jf-tq5">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                                                        <subviews>
-                                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="89p-io-o03">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                                                                <subviews>
-                                                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZvN-tr-vul">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                                                                                        <subviews>
-                                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-UK-c12">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                                            </imageView>
-                                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="aqH-vD-jAA">
-                                                                                                <rect key="frame" x="140" y="0.0" width="100" height="100"/>
-                                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                                            </imageView>
-                                                                                        </subviews>
-                                                                                    </view>
-                                                                                </subviews>
-                                                                            </stackView>
-                                                                        </subviews>
-                                                                    </stackView>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVc-rs-tPv">
-                                <rect key="frame" x="107" y="462" width="160" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVc-rs-tPv">
+                                <rect key="frame" x="127" y="446.66666666666669" width="160" height="40"/>
                                 <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="9d7-mR-QUX"/>
+                                    <constraint firstAttribute="height" constant="40" id="OEP-WW-yPo"/>
+                                </constraints>
                                 <state key="normal" image="btn_play">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -82,8 +33,46 @@
                                     <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dj9-QU-ucC"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvN-tr-vul">
+                                <rect key="frame" x="87" y="268" width="240" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-UK-c12">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="aqH-vD-jAA">
+                                        <rect key="frame" x="140" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8o1-PZ-DAd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="98E-Ab-gNf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="LCY-qq-cOg"/>
+                                    <constraint firstAttribute="height" constant="100" id="n3I-Mp-8d8"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-pv-dK4">
+                                <rect key="frame" x="133.66666666666666" y="122" width="146.99999999999997" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="ZSi-pW-fe8"/>
+                                    <constraint firstAttribute="width" constant="147" id="cxx-g1-f40"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.073963724922842033" green="0.5197691941624365" blue="0.40160415599501609" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vVc-rs-tPv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YVK-Av-yG9"/>
+                            <constraint firstItem="ZvN-tr-vul" firstAttribute="top" secondItem="AN7-pv-dK4" secondAttribute="bottom" constant="46.5" id="Yep-K5-fMA"/>
+                            <constraint firstItem="AN7-pv-dK4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bKf-cI-nNE"/>
+                            <constraint firstItem="AN7-pv-dK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bP8-ZL-Hla"/>
+                            <constraint firstItem="ZvN-tr-vul" firstAttribute="top" secondItem="AN7-pv-dK4" secondAttribute="bottom" constant="50" id="cA1-iJ-hnF"/>
+                            <constraint firstItem="ZvN-tr-vul" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hea-7B-FJp"/>
+                            <constraint firstItem="vVc-rs-tPv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kfG-OI-pRK"/>
+                            <constraint firstItem="ZvN-tr-vul" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mi0-1C-9gG"/>
+                            <constraint firstItem="vVc-rs-tPv" firstAttribute="top" secondItem="ZvN-tr-vul" secondAttribute="bottom" constant="78.5" id="ojF-It-UBo"/>
+                            <constraint firstItem="AN7-pv-dK4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="102" id="xw9-bD-L7d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -100,7 +89,7 @@
             <objects>
                 <viewController id="Oc8-lW-O3t" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pwt-yf-P8A">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ieA-YW-w6g"/>
@@ -112,7 +101,7 @@
     </scenes>
     <resources>
         <image name="btn_play" width="160" height="40"/>
-        <image name="dice1" width="150" height="150"/>
-        <image name="diceeLogo" width="147" height="96"/>
+        <image name="dice1" width="100" height="100"/>
+        <image name="diceeLogo" width="196" height="128"/>
     </resources>
 </document>
